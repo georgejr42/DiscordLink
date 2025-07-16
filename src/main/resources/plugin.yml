@@ -1,0 +1,6 @@
+name: DiscordLink
+version: '1.7'
+main: me.georgejr.discordLink.DiscordLink
+api-version: '1.18'
+authors: [ GeorgeJr ]
+description: Configurable Discord Link Plugin  
