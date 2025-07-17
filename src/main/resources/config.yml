@@ -1,0 +1,20 @@
+#=====================================
+#DiscordLink Configuration
+#-------------------------------------
+#Use MC chat color codes to change message colors
+#Chat Color Docs: https://www.digminecraft.com/lists/color_list_pc.php
+#=====================================
+
+#put the discord prefix here
+prefix: '&3&lDiscord:'
+
+#put your discord link here
+link: '{PREFIX} &bdiscord.gg/yourlinkhere'
+
+#change the cooldown time and message for the command here:
+#time is in seconds (set to 0 for no cooldown)
+#use {COOLDOWN} to get remaining time
+cooldown:
+  time: 5
+  message: '&cYou cannot execute that command for &b{COOLDOWN} &cseconds'
+  admin-bypass: true

@@ -4,3 +4,17 @@ main: me.georgejr.discordLink.DiscordLink
 api-version: '1.18'
 authors: [ GeorgeJr ]
 description: Configurable Discord Link Plugin  
+commands:
+  discord:
+    description: Allows players to get server's discord link
+    permission: discordlink.cmd
+    permission-message: "§cYou do not have permission to execute this command. If this is an error, please contact admin!"
+    aliases:
+      - discordlink
+      - dlink
+      - disc
+permissions:
+  discordlink.cmd:
+    description: Allows players to run /discord
+  discordlink.admin:
+    description: Allows admins to run /discord (reload/cooldown)
