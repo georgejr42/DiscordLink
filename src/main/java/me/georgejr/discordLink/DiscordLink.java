@@ -11,7 +11,7 @@ public final class DiscordLink extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        getServer().getLogger().log(Level.INFO, "Plugin Starting...");
+        getServer().getLogger().log(Level.INFO, "[DiscordLink] Plugin Starting...");
         //config register
         getConfig().options().copyDefaults();
         saveDefaultConfig();
@@ -21,16 +21,16 @@ public final class DiscordLink extends JavaPlugin {
         getCommand("discord").setTabCompleter(new PluginCommand());
 
 
-        getServer().getLogger().log(Level.INFO, "Plugin Started");
+        getServer().getLogger().log(Level.INFO, "[DiscordLink] Plugin Started");
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        getServer().getLogger().log(Level.INFO, "Plugin Stopping...");
+        getServer().getLogger().log(Level.INFO, "[DiscordLink] Plugin Stopping...");
         saveConfig();
 
-        getServer().getLogger().log(Level.INFO, "Plugin Stopped");
+        getServer().getLogger().log(Level.INFO, "[DiscordLink] Plugin Stopped");
     }
 
     public String formatString(String s){
