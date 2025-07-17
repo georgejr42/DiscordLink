@@ -12,7 +12,7 @@ commands:
     aliases:
       - discordlink
       - dlink
-      - disc
+      - dc
 permissions:
   discordlink.cmd:
     description: Allows players to run /discord

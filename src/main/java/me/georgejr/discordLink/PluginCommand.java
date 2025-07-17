@@ -25,7 +25,7 @@ public class PluginCommand implements CommandExecutor, TabCompleter {
         //check args length
         if(args.length == 0){
             //sender is running /discord
-            if(!(sender instanceof Player) || sender.hasPermission("discordlink.admin")) {
+            if(!(sender instanceof Player) || (sender.hasPermission("discordlink.admin") && main.getConfig().getBoolean("cooldown.admin-bypass"))) {
                 sender.sendMessage(main.formatString(main.getConfig().getString("link")));
                 return true;
             }
