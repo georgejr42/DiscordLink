@@ -3,7 +3,6 @@ package me.georgejr.discordLink;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.Objects;
 import java.util.logging.Level;
 
 public final class DiscordLink extends JavaPlugin {
@@ -13,7 +12,7 @@ public final class DiscordLink extends JavaPlugin {
         // Plugin startup logic
         getServer().getLogger().log(Level.INFO, "[DiscordLink] Plugin Starting...");
         //config register
-        getConfig().options().copyDefaults();
+        //getConfig().options().copyDefaults();
         saveDefaultConfig();
 
         //command
